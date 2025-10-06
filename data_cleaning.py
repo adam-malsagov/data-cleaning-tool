@@ -14,7 +14,7 @@ df.isnull()
 new_df = df.dropna(axis=0).dropna(axis=1)
 
 # Rename columns and standardize text formatting
-rename_cols = input("Enter columns to rename (e.g. First Name:first_name) separated by commas (or press Enter to skip): ")
+rename_cols = input("Enter columns to rename (e.g. First Name:first_name) separated by commas or press Enter to skip: ")
 if rename_cols.strip():
     new_names = dict(pair.split(":") for pair in rename_cols.split(","))
     new_df.rename(columns=new_names, inplace=True)
@@ -39,5 +39,5 @@ if rename_cols.strip():
 
 # Save data to new CSV file
 print(Fore.BLACK + Back.WHITE + "<===== SAVED DATA =====>")
-print(Fore.GREEN + "Cleaned data is saved to cleaned_data.csv")
+print(Fore.GREEN + "Cleaned data is saved as cleaned_data.csv")
 new_df.to_csv("cleaned_data.csv", index=False)
