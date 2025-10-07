@@ -1,49 +1,37 @@
 # Data Cleaning Tool 
 
-## Overview
-This script:
-1. Loads a CSV dataset into a Pandas DataFrame.
-2. Removes rows or columns containing missing values.
-3. Allows the user to rename selected columns.
-4. Standardizes text formatting **only in renamed columns**:
-   - Converts to lowercase  
-   - Trims whitespace  
-   - Removes special characters
-5. Generates a summary report of changes.
-6. Saves the cleaned dataset to `cleaned_data.csv`.
+This script loads a CSV dataset with Pandas, removes rows or columns containing missing values, allows the user to rename columns and standardizes text formatting in the renamed columns. After cleaning the data, tool generates a summary report of changes and saves the cleaned dataset to `cleaned_data.csv`.
 
-## Usage
-1. Install dependencies:
-```bash
+## ⚙️ Requirements
+- Python 3.x
+
+## 💻 Tech Stack
+- Python
+- Pandas
+
+
+## 🚀 Getting Started
+
+Follow these steps to download and run the program:
+
+1. Clone the repo or click the green **Code** button, then select **Download ZIP** to download the repository
+2. Extract the zip file to a folder on your computer
+3. Open Terminal (macOS/Linux) or Command Prompt/Anaconda Prompt (Windows)
+4. Navigate to the folder:
+`cd path/to/project`
+5. Install dependencies:
+```
 pip install -r requirements.txt
 ```
-2. Run the script:
-```bash
+6. Run the script:
+```
 python data_cleaning.py
 ```
-3. Provide:
+7. Provide:
    - Path to the CSV file (e.g., `sample_data.csv`)
-   - Rename mapping in the format `OldName:NewName`, separated by commas.
+   - (Optional) Rename columns in the format `OldName:NewName`, separated by commas.
 
-## Example
-Input CSV:
-```
-Name,Age,Occupation
- Alice ,25,Engineer
-Bob!,,Designer
-,30,Artist
-Carol ,29,Writer
-```
+## 📸 Example
 
-Run:
-```
-Enter the dataset CSV file path: sample_data.csv
-Enter columns to rename as old:new: Name:Full Name,Occupation:Job
-```
 
-Result (`cleaned_data.csv`):
-```
-full name,age,job
-alice,25,engineer
-carol,29,writer
-```
+
