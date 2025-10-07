@@ -1,6 +1,6 @@
 # Data Cleaning Tool 
 
-This script loads a CSV dataset with pandas, removes rows or columns containing missing values, allows the user to rename columns and standardizes text formatting in the renamed columns. After cleaning the data, tool generates a summary report of changes and saves the cleaned dataset to `cleaned_data.csv`.
+This script loads a CSV dataset with pandas, removes rows or columns containing missing values, allows the user to rename columns and standardizes text formatting in the renamed columns. After cleaning the data, this tool generates a summary report of changes and saves the cleaned dataset to `cleaned_data.csv`.
 
 ## ⚙️ Requirements
 - Python 3.x
@@ -42,4 +42,6 @@ python data_cleaning.py
 ![After cleaning](images/img22.png)
 
 
+## 📄 License
 
+This project is licensed under the [MIT License](/LICENSE).
