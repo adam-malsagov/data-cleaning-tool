@@ -33,5 +33,16 @@ python data_cleaning.py
 
 ## 📸 Example
 
+![Screenshot](images/data_cleaning.png)
+
+![Before cleaning](images/img11.png)
+
+![After cleaning](images/img22.png)
+
+
+
+
+
+
 
 
