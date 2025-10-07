@@ -10,7 +10,8 @@ df = pd.read_csv(file_path)
 print(Fore.YELLOW + "Current columns:", list(df.columns))
 
 # Remove missing values
-df.isnull()
+print(Fore.RED + "Total number of missing values per column:")
+print(df.isnull().sum())
 new_df = df.dropna(axis=0).dropna(axis=1)
 
 # Rename columns and standardize text formatting
